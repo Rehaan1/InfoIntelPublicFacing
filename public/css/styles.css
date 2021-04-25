@@ -1,0 +1,682 @@
+body
+{
+    font-family: 'Montserrat', sans-serif;
+    background-color: black;
+}
+h1, h2, h3{
+    font-family: "Montserrat-Bold", sans-serif;
+    color:white;
+}
+
+h4{
+  color:#F3F3F3;
+  font-size: 1.2rem;
+}
+p{
+    color: #BFBFBF;
+    font-size: 1.2rem;
+}
+.content {
+  position: relative;
+  background-color: black;
+  height: 100vh;
+  min-height: 25rem;
+  width: 100%;
+  overflow: hidden;
+}
+.third
+{
+
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.content video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: 0;
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.content .container {
+  position: relative;
+  z-index: 2;
+}
+
+.content .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  opacity: 0.8;
+  z-index: 1;
+}
+
+.heading-wrapper
+{
+    padding:1% 15%;
+}
+
+.font-awesome
+{
+    color: white;
+}
+
+/*Fading*/
+.fade-in
+{
+  opacity: 0;
+  transition: opacity 500ms ease-in;
+}
+
+.fade-in.appear
+{
+  opacity: 1;
+}
+
+/*Slide*/
+.from-down
+{
+    transform: translateY(50%);
+}
+
+.from-left
+{
+    transform: translateX(-50%);
+}
+
+.from-right
+{
+  transform: translateX(50%);
+}
+
+.from-left,.from-right,.from-down
+{
+  transition: opacity 400ms ease-in, transform 400ms ease-in;
+  opacity: 0;
+}
+
+.from-down.appear{
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.from-left.appear,
+.from-right.appear
+{
+  transform: translateX(0);
+  opacity: 1;
+}
+
+/*Parallax*/
+
+.parallax
+{
+  background-image: url("/pics/bg9.webp");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.color-highlight-light
+{
+    color: #00FFFD;
+}
+
+.title-headings
+{
+    font-weight: bold;
+    font-size: 3rem;
+    line-height: 1.5;
+}
+
+.container-fluid
+{
+    padding: 3% 15% 7%;
+}
+
+.container-fluid-services
+{
+    padding: 3% 12% 7%;
+}
+
+.navbar-container
+{
+    padding: 0% 15% 0%;
+}
+
+/* Title*/
+#title
+{
+    color: white;
+    background-color: transparent;
+}
+
+.heading-btn
+{
+
+    font-size: 1.3rem;
+}
+
+.btn-light.heading-btn:hover
+{
+    background-color:transparent;
+    border-color:white;
+    color: white;
+}
+
+/* Navbar */
+
+.navbar
+{
+    padding: 0 0 0;
+
+}
+
+.navbar-brand
+{
+    font-size: 3rem;
+    font-family: 'Ubuntu';
+    font-weight: bold;
+}
+
+.nav-link
+{
+    font-size: 1.2rem;
+    font-family: "Montserrat-Light",sans-serif;
+    color: white;
+
+}
+
+
+.nav-item
+{
+    padding: 0 18px;
+}
+
+.request-btn1
+{
+    margin: 6% 3% 5% 0;
+    color: white;
+    border-color: white;
+}
+
+.request-btn1:hover
+{
+    background-color: white;
+    color: black;
+    border-color: white;
+}
+
+.title-img
+{
+    width: 80%;
+    height: 80%;
+}
+
+.main-heading
+{
+    font-size: 3.5rem;
+    line-height: 1.2;
+    font-weight: 900;
+}
+
+.main-heading-2
+{
+    color: white;
+    padding:3% 0% 0%;
+}
+
+/* Counters */
+#counters
+{
+    background-color: transparent;
+    visibility: collapse;
+    height: 0;
+}
+
+.counters-container
+{
+    padding: 7% 15%;
+    text-align: center;
+}
+
+
+/* Features */
+
+.f-card
+{
+    background-color: rgba(255,255,255,0.1);
+    border-radius: 10px;
+    margin-top: 1%;
+    margin-left: 1%;
+    padding: 2% 2%;
+}
+
+.features-container
+{
+    padding: 2% 15%;
+    text-align: center;
+}
+
+.features-item p
+{
+    font-size: 1.0rem;
+}
+.features-item
+{
+    padding-top: 1%;
+}
+
+.features-medium-heading
+{
+    padding-top: 2%;
+    font-size: 1.5rem;
+    font-weight: bold;
+    line-height: 1.5;
+}
+
+.icon-container
+{
+    margin: auto;
+}
+
+/*testimonials */
+#testimonials
+{
+    text-align: center;
+    color: #fff;
+}
+
+#testimonials h2
+{
+    padding-bottom: 7%;
+}
+
+
+.btn-light.service-btn:hover
+{
+  border-color: black;
+}
+
+.btn-outline-light.service-btn:hover
+{
+  background-color:white;
+  color: black;
+}
+
+/*services*/
+#services
+{
+    text-align: center;
+    background-image: url("/pics/secondbgbg.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.services-col
+{
+    padding: 3% 1%;
+}
+
+.card
+{
+    border-color:black;
+    border-radius: 10px;
+    background-color: rgba(0,0,0,0.5);
+}
+
+/*contact*/
+#contact
+{
+  background-image: url("/pics/bob.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-align: center;
+}
+
+.contact-para{
+   padding: 5%;
+   font-size: 1.4rem;
+}
+
+.contact-para-second{
+    padding: 5%;
+    font-size: 1.4rem;
+    text-align: left;
+ }
+
+form
+{
+    text-align: left;
+    margin: 0 5%;
+}
+
+label
+{
+    color: white;
+}
+
+.form-group
+{
+    padding:2% 1%;
+}
+
+.form-button
+{
+   padding-top: 3%;
+   padding-left: 1%;
+}
+
+.btn-light.contact-btn:hover
+{
+    background-color:#1F1F1F;
+    border-color:white;
+    color: white;
+}
+
+.contact-page-background
+{
+  background-image: url("/pics/contact.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 10%;
+}
+
+.icp-page-background
+{
+  background-image: url("/pics/handshake.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 10%;
+}
+
+.compint-page-background
+{
+  background-image: url("/pics/competitiveintel.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 10%;
+}
+
+.tam-page-background
+{
+  background-image: url("/pics/tam.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 10%;
+}
+
+.techno-page-background
+{
+  background-image: url("/pics/techno.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 10%;
+}
+
+.hi-page-background
+{
+  background-image: url("/pics/hi.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 10%;
+}
+
+.abm-page-background
+{
+  background-image: url("/pics/abm.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 10%;
+}
+
+.aboutus-page-background
+{
+    background-image: url("/pics/aboutus.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 10%;
+}
+
+.ddm-page-background
+{
+    background-image: url("/pics/ddm.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 10%;
+}
+
+.dc-page-background
+{
+  background-image: url("/pics/techno.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 10%;
+}
+
+.contact-details
+{
+    padding-bottom: 4%;
+}
+
+/*footer*/
+
+#footer
+{
+    text-align: center;
+    color: white;
+}
+
+.footer-container
+{
+    padding: 1% 25% 1%;
+}
+
+#footer a
+{
+    text-decoration: none;
+    color: white;
+}
+
+#footer a:hover
+{
+    font-weight: bolder;
+}
+
+.social
+{
+    padding: 10%;
+}
+
+@media only screen and (max-width: 600px) 
+{
+    .navbar-brand
+    {
+        font-size: 2rem;
+    }
+
+    .nos-home
+    {
+        visibility: collapse;
+        height: 0;
+        width: 0;
+    }
+
+    p,h4,h3
+    {
+        font-size: 1rem;
+    }
+
+    .container-fluid
+    {
+        padding: 4% 10% 8%;
+    }
+
+    .container-fluid-services
+    {
+        padding: 4% 10% 8%;
+    }
+
+    .heading-wrapper
+    {
+        padding:1% 12%;
+    }
+
+    .main-heading
+    {
+        padding: 20% 0;
+        font-size: 2.9rem;
+        padding-bottom: 3%;
+    }
+
+     
+    .main-heading-2
+    {
+        padding:3% 0% 0%;
+        font-size: 1.5rem;
+    }
+
+    .heading-btn
+    {
+ 
+        font-size: 1rem;
+        padding: 5%;
+        border-radius: 10px;
+    }
+
+    .features-item
+    {
+        padding: 7% 5%;
+    }
+
+    .features-row
+    {
+        padding: 2%;
+    }
+
+    #counters
+    {
+        background-color: transparent;
+        visibility: visible;
+        height: auto;
+    }
+
+    .title-headings
+    {
+        font-size: 2.2rem;
+        font-weight: bold;
+        line-height: 1.5;
+        padding: 2% 0;
+    }
+
+    #services
+    {
+        text-align: center;
+        background-image: url("/pics/secondbgbgmobile.webp");
+        background-size: cover;
+        background-repeat: no-repeat;
+    }  
+
+    .services-col
+    {
+        padding: 3% 0;
+    }
+
+    .service-para
+    {
+        padding-bottom: 3%;
+        font-size: 1.2rem;
+    }
+
+    a
+    {
+        font-size: 1.0rem;
+    }
+
+    .contact-para
+    {
+        padding-top: 10% 0;
+        margin-left: 0;
+        margin-right: 0;
+        font-size: 1.1rem;
+     }
+ 
+     .contact-para-second{
+        padding-top: 20%;
+        font-size: 1.1rem;
+     }
+
+    .techno-page-background
+    {
+      padding: 30%;
+    }
+    
+    .icp-page-background
+    {
+      padding: 30%;
+    }
+
+    .compint-page-background
+    {
+      padding: 16%;
+    }
+
+    .tam-page-background
+    {
+      padding: 30%;
+    }
+
+    .contact-page-background
+    {
+      padding: 30%;
+    }
+    
+    .hi-page-background
+    {
+      padding: 30%;
+    }
+
+    .abm-page-background
+    {
+      padding: 30%;
+    }
+
+    .aboutus-page-background
+    {
+        padding: 30%;
+    }
+
+
+    .ddm-page-background
+    {
+        padding: 30%;
+    }
+
+    .dc-page-background
+    {
+        padding: 30%;
+    }
+
+}
