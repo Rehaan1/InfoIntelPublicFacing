@@ -16,6 +16,10 @@ p{
     color: #BFBFBF;
     font-size: 1.2rem;
 }
+li{
+    color: #BFBFBF;
+    font-size: 1.2rem;
+}
 .content {
   position: relative;
   background-color: black;
@@ -476,6 +480,15 @@ label
   padding: 10%;
 }
 
+.dcp-page-background
+{
+  background-image: url("/pics/dcp.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 10%;
+}
+
 .contact-details
 {
     padding-bottom: 4%;
@@ -675,6 +688,11 @@ label
     }
 
     .dc-page-background
+    {
+        padding: 30%;
+    }
+    
+    .dcp-page-background
     {
         padding: 30%;
     }

@@ -51,6 +51,10 @@ app.get("/dc",(req,res)=>{
     res.render("dc");
 })
 
+app.get("/dcp",(req,res)=>{
+    res.render("dcp");
+})
+
 app.get("/competitive-intelligence",(req,res)=>{
     res.render("competitive-int");
 });
